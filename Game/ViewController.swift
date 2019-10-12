@@ -10,8 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var slider: UISlider!
+    
     @IBAction func showAlert() {
-        let alert = UIAlertController(title: "Hello User", message: "Interested?", preferredStyle: .alert)
+        let currentValue = Int((slider.value*100).rounded())
+        let message = "The value is -> \(currentValue)"
+        let alert = UIAlertController(title: "Hello User", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "Go Back", style: .default, handler: nil)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
@@ -22,5 +26,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func sliderMoved(_ slider: UISlider){
+        //let roundedValue = (slider.value*100)
+        //currentValue = Int(roundedValue.rounded())
+    }
 
 }

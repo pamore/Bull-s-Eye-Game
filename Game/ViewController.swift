@@ -25,10 +25,4 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func sliderMoved(_ slider: UISlider){
-        //let roundedValue = (slider.value*100)
-        //currentValue = Int(roundedValue.rounded())
-    }
-
 }

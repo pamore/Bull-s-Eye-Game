@@ -36,7 +36,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kma-Wd-0SO">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.01" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kma-Wd-0SO">
                                 <rect key="frame" x="183" y="129" width="572" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
@@ -100,7 +100,10 @@
                         <viewLayoutGuide key="safeArea" id="QWj-Kc-6o7"/>
                     </view>
                     <connections>
+                        <outlet property="roundLabel" destination="9g3-IE-mdk" id="m1i-Hh-e0h"/>
+                        <outlet property="scoreLabel" destination="4RN-Yj-xWi" id="1xO-ZX-sAN"/>
                         <outlet property="slider" destination="kma-Wd-0SO" id="xN9-vS-zIt"/>
+                        <outlet property="targetLabel" destination="tMG-NK-yyi" id="V6F-gX-q9S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Dg-7T-ijh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

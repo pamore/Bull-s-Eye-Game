@@ -22,30 +22,23 @@ class ViewController: UIViewController {
     var round = 0
     
     @IBAction func showAlert() {
-        currentValue = Int((slider.value*100).rounded())
         calculateResult()
-        
-        let title:String
-        if(points == 100) {
-            title = "Perfect! 100 points Bonus"
-            points += 100
-        } else if (points > 90) {
-            title = "OOOOh....so close"
-        } else {
-            title = "You suck!"
-        }
+        let title:String = getTitle()
         score += points
-        let message = "You scored -> \(points)"
+        
+        let message = "You scored : \(points)"
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "Go Back", style: .default, handler: nil)
+        let action = UIAlertAction(title: "OK", style: .default, handler: {
+            action in
+            self.startNewRound()
+        })
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        startNewRound()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        startNewRound()
+        startNewGame()
     }
     func startNewRound() {
         round += 1
@@ -60,6 +53,23 @@ class ViewController: UIViewController {
         roundLabel.text = String(round)
     }
     func calculateResult() {
+        currentValue = Int((slider.value*100).rounded())
         points = 100 - abs(currentValue-targetValue)
     }
+    func getTitle() -> String {
+        if(points == 100) {
+            points += 100
+            return "Perfect! 100 points Bonus"
+        } else if (points > 90) {
+            return "OOOOh....so close"
+        } else {
+            return "You suck!"
+        }
+    }
+    @IBAction func startNewGame() {
+        round = 0
+        score = 0
+        startNewRound()
+    }
+    
 }

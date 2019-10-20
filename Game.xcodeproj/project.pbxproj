@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C6D317B235A85E300CCD6CF /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 4C6D317A235A85E300CCD6CF /* BullsEye.html */; };
 		4C7F183023538DD400B5C948 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7F182F23538DD400B5C948 /* AboutViewController.swift */; };
 		4CE938202353B81A00F01FCE /* AboutAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9381F2353B81A00F01FCE /* AboutAuthorViewController.swift */; };
 		4CEB91CB234A8E21008A805E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB91CA234A8E21008A805E /* AppDelegate.swift */; };
@@ -38,9 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C6D317A235A85E300CCD6CF /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 		4C7F182F23538DD400B5C948 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		4CE9381F2353B81A00F01FCE /* AboutAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAuthorViewController.swift; sourceTree = "<group>"; };
-		4CEB91C7234A8E21008A805E /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CEB91C7234A8E21008A805E /* Bull's Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bull's Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CEB91CA234A8E21008A805E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CEB91CC234A8E21008A805E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4CEB91D0234A8E21008A805E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,7 +97,7 @@
 		4CEB91C8234A8E21008A805E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4CEB91C7234A8E21008A805E /* Game.app */,
+				4CEB91C7234A8E21008A805E /* Bull's Eye.app */,
 				4CEB91DD234A8E22008A805E /* GameTests.xctest */,
 				4CEB91E8234A8E22008A805E /* GameUITests.xctest */,
 			);
@@ -115,6 +117,7 @@
 				4CEB91FC234A8EBE008A805E /* ViewController.swift */,
 				4C7F182F23538DD400B5C948 /* AboutViewController.swift */,
 				4CE9381F2353B81A00F01FCE /* AboutAuthorViewController.swift */,
+				4C6D317A235A85E300CCD6CF /* BullsEye.html */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -162,7 +165,7 @@
 			);
 			name = Game;
 			productName = Game;
-			productReference = 4CEB91C7234A8E21008A805E /* Game.app */;
+			productReference = 4CEB91C7234A8E21008A805E /* Bull's Eye.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4CEB91DC234A8E22008A805E /* GameTests */ = {
@@ -253,6 +256,7 @@
 				4CEB91D4234A8E21008A805E /* Preview Assets.xcassets in Resources */,
 				4CEB91D1234A8E21008A805E /* Assets.xcassets in Resources */,
 				4CEB91FB234A8E70008A805E /* Main.storyboard in Resources */,
+				4C6D317B235A85E300CCD6CF /* BullsEye.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +459,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Game;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bull's Eye";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -474,7 +478,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.Game;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bull's Eye";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
